@@ -1,0 +1,506 @@
+<html>
+<head>
+  <title>SongStation</title>
+<link rel="stylesheet" href="css/bootstrap.css" type="text/css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="js/bootstrap.bundle.js"></script>
+
+<style>
+
+body{
+  margin:0;
+  overflow-x:hidden;
+}
+/* .navbar{
+  overflow:hidden;
+  position:fixed;
+  top:0;
+  width:100%;
+} */
+
+  .anchor
+  {
+    text-decoration: none;
+    color: white;
+  }
+  ul
+  {
+    list-style-type: none;
+  }
+  li
+  {
+    display:inline;
+    padding:1%;
+  }
+
+  .cc:hover
+  {
+    color:green;
+  }
+</style>
+
+<script>
+  function play()
+  {
+    alert("hii");
+  }
+  function profile()
+  {
+    alert('hello');
+  }
+
+  // function changeA()
+  // {
+  //   document.getElementById('changecolor').style.color='green';
+  // }
+
+  // function changeB()
+  // {
+  //   document.getElementById('changecolor').style.color='white';
+  // }
+
+</script>
+</head>
+<body class="bg-black" >
+
+<!--Outer Start-->
+<div class="container-fluid">
+<div class="row position-relative">
+
+<!--Left section start-->
+<div id="left" class="col-sm-3 text-light position-fixed top-0 start-0">
+<div class="row my-2 ms-1 bg-dark" style="border-radius:7px; min-height:110px;">
+<div class="m-2"><a href="#" style="text-decoration:none; color:white;"><i class="fa-solid fa-home"></i><b class="ms-3">Home</b></a></div>
+
+<div class="m-2"><a href="#" style="text-decoration:none; color:white;"><i class="fa-solid fa-magnifying-glass"></i><b class="ms-3">Search</b></a></div>
+</div>
+<div class="row my-2 ms-1 bg-dark" style="border-radius:7px; min-height:500px;">
+  <b style="font-size: large;">Your Library</b>
+</div>
+</div>
+<!--Left section end-->
+
+<!--Right main section start-->
+<div id="right" class="col-sm-9 text-light position-absolute top-0 end-0">
+<div class="row">
+<div class="my-2 mx-2" style="width:100%; border-top-right-radius:7px; border-top-left-radius:7px; min-height:616px; background-image:linear-gradient(rgb(69, 69, 154),rgb(32, 30, 30),rgb(32, 30, 30),rgb(32, 30, 30),rgb(32, 30, 30),rgb(32, 30, 30));">
+
+<!--Navbar start-->  
+<div class="sticky-top row" style="min-height:60px; border-top-right-radius:7px; border-top-left-radius:7px; background-color:rgb(69, 69, 154);">
+  <div class="col-sm-6 p-3" style="font-size: larger;"><a class="anchor" href="#"><i class="fa-solid fa-angle-left mx-3"></i></a><a class="anchor" href="#"><i class="fa-solid fa-angle-right mx-3"></i></a></div>
+  <div class="col-sm-2 bg-light rounded-5 p-2 my-2" style="text-align:center;"><a class="anchor" href="#" style="color:black;"><b>Explore Premium</b></a></div>
+  <div class="col-sm-2 p-3"><a class="anchor" href="#"><b>Install App</b></a></div>
+  <div class="col-sm-2 p-3" style="font-size: larger;"><a class="anchor" href="#"><i class="fa-regular fa-bell mx-3"></i></a><a class="anchor" href="#"><i class="fa-regular fa-user mx-3" onclick="profile()"></i></a></div>
+</div>
+<!--Navbar end-->
+
+<!--Liked songs and playlists section start-->
+<div class="row"><b style="font-size:34px;">Good Morning</b></div>
+<div class="row m-2">
+    <div class="col-sm-4 py-3 ps-0 pe-2"><div style=" padding:4%; background-color:rgb(80, 70, 125); min-height:50px; border-radius:5px;">Liked Songs</div></div>
+    <div class="col-sm-4 py-3 ps-0 pe-2"><div style="padding:4%; background-color:rgb(80, 70, 125); min-height:50px; border-radius:5px;">Playlist 1</div></div>
+    <div class="col-sm-4 py-3 ps-0 pe-2"><div style="padding:4%; background-color:rgb(80, 70, 125); min-height:50px; border-radius:5px;">Playlist 2</div></div>
+</div>
+<div class="row m-2">
+  <div class="col-sm-4 py-3 ps-0 pe-2"><div style=" padding:4%; background-color:rgb(80, 70, 125); min-height:50px; border-radius:5px;">Liked Songs</div></div>
+  <div class="col-sm-4 py-3 ps-0 pe-2"><div style="padding:4%; background-color:rgb(80, 70, 125); min-height:50px; border-radius:5px;">Playlist 1</div></div>
+  <div class="col-sm-4 py-3 ps-0 pe-2"><div style="padding:4%; background-color:rgb(80, 70, 125); min-height:50px; border-radius:5px;">Playlist 2</div></div>
+</div>
+<!--Liked songs and playlists section end-->
+
+<!--Popular New Releases section start-->
+<div class="row"><b style="font-size:25px;">Popular New Releases</b></div>
+<div class="row mt-2">
+    <div class="col-sm-3">
+      <a href="#" class="anchor">
+        <div class="card p-2 text-light card-body" style="background-color:#494F55;">
+            <img src="images/aedilhaimushkil.jpg" class="card-img-top " alt="...">
+            <div class="card-body">
+              <p class="card-text"><b>Ae Dil Hai Mushkil</b></p>
+              <button class="rounded-5" style="border-color:white; background-color:green; height:50px; width:50px" onclick="play()"><i style="color:white;" class="fa-solid fa-play"></i></button>
+              
+            </div>
+          </div>
+      </a>
+    </div>
+    
+    <div class="col-sm-3">
+      <a href="#" class="anchor">
+        <div class="card p-2 text-light card-body" style="background-color:#494F55;">
+          <img src="images/humdard.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text"><b>Humdard</b></p>
+            <audio controls style="width:100%;">
+              <source src="audio/Humdard Ek Villain 128 Kbps.mp3" type="audio/mpeg">
+            </audio>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="col-sm-3">
+      <a href="#" class="anchor">
+        <div class="card p-2 text-light card-body" style="background-color:#494F55;">
+            <img src="images/darddiloke.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text"><b id="adhm">Dard Dilo Ke</b></p>
+              <audio controls style="width:100%;">
+                <source src="audio/Dard Dilo Ke Slowed Reverb Lofi Mix-(MeetMp3.In).mp3" type="audio/mpeg">
+              </audio>
+            </div>
+          </div>
+      </a>
+    </div>
+    <div class="col-sm-3">
+      <a href="#" class="anchor">
+        <div class="card p-2 text-light card-body" style="background-color:#494F55;">
+            <img src="images/tumhiho.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text"><b>Tum Hi Ho</b></p>
+              <audio controls style="width:100%;">
+                <source src="audio/tumhiho.mp3" type="audio/mpeg">
+              </audio>
+            </div>
+          </div>
+      </a>
+    </div>
+</div>
+<!--Popular New Releases section end-->
+
+<!--Recently Played section start-->
+<div class="row mt-5"><b style="font-size:25px;">Recently Played</b></div>
+<div class="row mt-2">
+    <div class="col-sm-3">
+      <a href="#" class="anchor">
+        <div class="card p-2 text-light card-body" style=" background-color:#494F55;">
+            <img src="images/ramsiyaram.jpg" class="card-img-top " alt="...">
+            <div class="card-body">
+              <p class="card-text"><b>Ram Siya Ram</b></p>
+              <audio controls style="width:100%;">
+                <source src="audio/_Ram Siya Ram(PagalWorld.com.pe).mp3" type="audio/mpeg">
+              </audio>
+            </div>
+          </div>
+      </a>
+    </div>
+    <div class="col-sm-3">
+      <a href="#" class="anchor">
+        <div class="card p-2 text-light card-body" style=" background-color:#494F55;">
+            <img src="images/tumpremho.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text"><b>Tum Prem Ho</b></p>
+              <audio controls style="width:100%;">
+                <source src="audio/Tum Prem Ho Radhe(PaglaSongs).mp3" type="audio/mpeg">
+              </audio>
+            </div>
+          </div>
+      </a>
+    </div>
+    <div class="col-sm-3">
+      <a href="#" class="anchor">
+        <div class="card p-2 text-light card-body" style="background-color:#494F55;">
+            <img src="images/aarambh.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text"><b>Aarambh Prachand</b></p>
+              <audio controls style="width:100%;">
+                <source src="audio/Aarambh Hai Prachand(PaglaSongs).mp3" type="audio/mpeg">
+              </audio>
+            </div>
+          </div>
+      </a>
+    </div>
+    <div class="col-sm-3">
+      <a href="#" class="anchor">
+        <div class="card p-2 text-light card-body" style=" background-color:#494F55;">
+            <img src="images/maivochaand.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text"><b>Mai Vo Chaand</b></p>
+              <audio controls style="width:100%;">
+                <source src="audio/Main Woh Chaand Teraa Surroor 128 Kbps.mp3" type="audio/mpeg">
+              </audio>
+            </div>
+          </div>
+      </a>
+    </div>
+</div>
+<!--Recently Played section end-->
+
+<!--Artists Section Start-->
+<div class="row mt-5"><b style="font-size:25px;">Popular Artists</b></div>
+<div class="row mt-2">
+  <div class="col-sm-3">
+    <a href="arijitsingh.html" class="anchor">
+      <div class="card p-2 text-light card-body" style=" background-color:#494F55; ">
+          <img src="images/arijitsingh.jpg" class="card-img-top " alt="..." style="border-radius:50%;">
+          <div class="card-body">
+            <p class="card-text"><b>Arijit Singh</b><br/>Artist</p>
+          </div>
+        </div>
+    </a>
+  </div>
+  <div class="col-sm-3">
+    <a href="shreyaghoshal.html" class="anchor">
+      <div class="card p-2 text-light card-body" style=" background-color:#494F55;">
+          <img src="images/shreyaghoshal.jpg" class="card-img-top" alt="..." style="border-radius:50%;">
+          <div class="card-body">
+            <p class="card-text"><b>Shreya Ghoshal</b><br/>Artist</p>
+            
+          </div>
+        </div>
+    </a>
+  </div>
+  <div class="col-sm-3">
+    <a href="ankittiwari.html" class="anchor">
+      <div class="card p-2 text-light card-body" style="background-color:#494F55;">
+          <img src="images/ankittiwari.jpg" class="card-img-top" alt="..." style="border-radius:50%;">
+          <div class="card-body">
+            <p class="card-text"><b>Ankit Tiwari</b><br/>Artist</p>
+            
+          </div>
+        </div>
+    </a>
+  </div>
+  <div class="col-sm-3">
+    <a href="pritam.html" class="anchor">
+      <div class="card p-2 text-light card-body" style=" background-color:#494F55;">
+          <img src="images/pritam.jpg" class="card-img-top" alt="..." style="border-radius:50%;">
+          <div class="card-body">
+            <p class="card-text"><b>Pritam</b><br/>Artist</p>
+          </div>
+        </div>
+    </a>
+  </div>
+</div>
+<!--Artists section end-->
+
+<!--Most Trending section start-->
+<div class="row mt-5"><b style="font-size:25px;">Most Trending</b></div>
+<div class="row mt-2 mb-3">
+    <div class="col-sm-3">
+      <a href="#" class="anchor">
+        <div class="card p-2 text-light card-body" style=" background-color:#494F55;">
+            <img src="images/tkpk.jpg" class="card-img-top " alt="...">
+            <div class="card-body">
+              <p class="card-text"><b>Tumhe Kitna Pyaar</b></p>
+              <audio controls style="width:100%;">
+                <source src="audio/Tumhe Kitna Pyaar Karte(PagalWorld.com.pe).mp3" type="audio/mpeg">
+              </audio>
+            </div>
+          </div>
+      </a>
+    </div>
+    <div class="col-sm-3">
+      <a href="#" class="anchor">
+        <div class="card p-2 text-light card-body" style=" background-color:#494F55;">
+            <img src="images/maivochaand.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text"><b>Mai Vo Chaand</b></p>
+              <audio controls style="width:100%;">
+                <source src="audio/Main Woh Chaand Teraa Surroor 128 Kbps.mp3" type="audio/mpeg">
+              </audio>
+            </div>
+          </div>
+      </a>
+    </div>
+    <div class="col-sm-3">
+      <a href="#" class="anchor">
+        <div class="card p-2 text-light card-body" style="background-color:#494F55;">
+            <img src="images/sanamterikasam.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text"><b>Sanam Teri Kasam</b></p>
+              <audio controls style="width:100%;">
+                <source src="audio/01 Sanam Teri Kasam (Title Song) Ankit Tiwari 190Kbps (1).mp3" type="audio/mpeg">
+              </audio>
+            </div>
+          </div>
+      </a>
+    </div>
+    <div class="col-sm-3">
+      <a href="#" class="anchor">
+        <div class="card p-2 text-light card-body" style=" background-color:#494F55;">
+            <img src="images/lomaanliya.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text"><b>Lo Maan Liya</b></p>
+              <audio controls style="width:100%;">
+                <source src="audio/Lo Maan Liya Raaz Reboot 128 Kbps.mp3" type="audio/mpeg">
+              </audio>
+            </div>
+          </div>
+      </a>
+    </div>
+</div>
+<!--Most Trending section end-->
+
+<!--Popular New Releases section start-->
+<div class="row mt-5"><b style="font-size:25px;">Popular New Releases</b></div>
+<div class="row mt-2">
+    <div class="col-sm-3">
+      <a href="#" class="anchor">
+        <div class="card p-2 text-light card-body" style="background-color:#494F55;">
+            <img src="images/aedilhaimushkil.jpg" class="card-img-top " alt="...">
+            <div class="card-body">
+              <p class="card-text"><b>Ae Dil Hai Mushkil</b></p>
+              <audio controls style="width:100%;">
+                <source src="audio/aedilhaimushkil.mp3" type="audio/mpeg">
+              </audio>
+            </div>
+          </div>
+      </a>
+    </div>
+    
+    <div class="col-sm-3">
+      <a href="#" class="anchor">
+        <div class="card p-2 text-light card-body" style="background-color:#494F55;">
+          <img src="images/humdard.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text"><b>Humdard</b></p>
+            <audio controls style="width:100%;">
+              <source src="audio/Humdard Ek Villain 128 Kbps.mp3" type="audio/mpeg">
+            </audio>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="col-sm-3">
+      <a href="#" class="anchor">
+        <div class="card p-2 text-light card-body" style="background-color:#494F55;">
+            <img src="images/darddiloke.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text"><b id="adhm">Dard Dilo Ke</b></p>
+              <audio controls style="width:100%;">
+                <source src="audio/Dard Dilo Ke Slowed Reverb Lofi Mix-(MeetMp3.In).mp3" type="audio/mpeg">
+              </audio>
+            </div>
+          </div>
+      </a>
+    </div>
+    <div class="col-sm-3">
+      <a href="#" class="anchor">
+        <div class="card p-2 text-light card-body" style="background-color:#494F55;">
+            <img src="images/tumhiho.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text"><b>Tum Hi Ho</b></p>
+              <audio controls style="width:100%;">
+                <source src="audio/tumhiho.mp3" type="audio/mpeg">
+              </audio>
+            </div>
+          </div>
+      </a>
+    </div>
+</div>
+<!--Popular New Releases section end-->
+
+<!--Recently Played section start-->
+<div class="row mt-5"><b style="font-size:25px;">Recently Played</b></div>
+<div class="row mt-2">
+    <div class="col-sm-3">
+      <a href="#" class="anchor">
+        <div class="card p-2 text-light card-body" style=" background-color:#494F55;">
+            <img src="images/ramsiyaram.jpg" class="card-img-top " alt="...">
+            <div class="card-body">
+              <p class="card-text"><b>Ram Siya Ram</b></p>
+              <audio controls style="width:100%;">
+                <source src="audio/_Ram Siya Ram(PagalWorld.com.pe).mp3" type="audio/mpeg">
+              </audio>
+            </div>
+          </div>
+      </a>
+    </div>
+    <div class="col-sm-3">
+      <a href="#" class="anchor">
+        <div class="card p-2 text-light card-body" style=" background-color:#494F55;">
+            <img src="images/tumpremho.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text"><b>Tum Prem Ho</b></p>
+              <audio controls style="width:100%;">
+                <source src="audio/Tum Prem Ho Radhe(PaglaSongs).mp3" type="audio/mpeg">
+              </audio>
+            </div>
+          </div>
+      </a>
+    </div>
+    <div class="col-sm-3">
+      <a href="#" class="anchor">
+        <div class="card p-2 text-light card-body" style="background-color:#494F55;">
+            <img src="images/aarambh.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text"><b>Aarambh Prachand</b></p>
+              <audio controls style="width:100%;">
+                <source src="audio/Aarambh Hai Prachand(PaglaSongs).mp3" type="audio/mpeg">
+              </audio>
+            </div>
+          </div>
+      </a>
+    </div>
+    <div class="col-sm-3">
+      <a href="#" class="anchor">
+        <div class="card p-2 text-light card-body" style=" background-color:#494F55;">
+            <img src="images/maivochaand.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text"><b>Mai Vo Chaand</b></p>
+              <audio controls style="width:100%;">
+                <source src="audio/Main Woh Chaand Teraa Surroor 128 Kbps.mp3" type="audio/mpeg">
+              </audio>
+            </div>
+          </div>
+      </a>
+    </div>
+</div>
+<!--Recently Played section end-->
+
+
+<!--Footer Start-->
+<div class="row mt-5 text-light">
+  <div class="col-sm-3 ps-5 pe-5 pt-5">
+    <p><b>Company</b></p>
+    <p style="color:grey;">About</p>
+    <p style="color:grey;">Jobs</p>
+    <p style="color:grey;">For the Record</p>
+  </div>
+  <div class="col-sm-3 ps-5 pe-5 pt-5">
+    <p><b>Communities</b></p>
+    <p style="color:grey;">For Artists</p>
+    <p style="color:grey;">Developers</p>
+    <p style="color:grey;">Advertising</p>
+    <p style="color:grey;">Investors</p>
+    <p style="color:grey;">Vendors</p>
+  </div>
+  <div class="col-sm-3 ps-5 pe-5 pt-5">
+    <p><b>Useful Links</b></p>
+    <p style="color:grey;">Support</p>
+    <p style="color:grey;">Free Mobile App</p>
+  </div>
+  <div class="col-sm-3 ps-5 pe-5 pt-5">
+    <a class="anchor cc" id="s" href="#"><i style="font-size:xx-large;" class="fa-brands fa-instagram m-1"></i></a>
+    <a class="anchor cc" id="t" href="#"><i style="font-size:xx-large;" class="fa-brands fa-twitter m-1"></i></a>
+    <a class="anchor cc" id="u" href="#"><i style="font-size:xx-large;" class="fa-brands fa-facebook m-1"></i></a>
+  </div>
+</div>
+
+<hr class="mx-4">
+
+<div class="row text-secondary mx-2 mt-4 mb-5">
+  <ul>
+    <li>Legal</li>
+    <li>Privacy Center</li>
+    <li>Privacy Policy</li>
+    <li>Cookies</li>
+    <li>About Ads</li>
+    <li>Accessibility</li>
+    <li style="padding-left:21%;">&copy Spotify AB</li>
+  </ul>
+</div>
+<!--Footer end-->
+
+</div>
+</div>
+</div>
+<!--Right main section end-->
+
+</div>
+</div>
+<!--Outer End-->
+
+</body>
+</html>
